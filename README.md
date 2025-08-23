@@ -17,6 +17,17 @@ A comprehensive farm management system with two microservices:
   - Production summaries
   - Activity reports
 
+### Project Screenshots
+
+#### Dashboard View
+![Dashboard Screenshot](screenshots/dashboard.png)
+*The main dashboard providing an overview of farm metrics and activities*
+
+#### Farm Management Interface
+![Farm Management](screenshots/farm_management.png)
+*Interface for managing farms and related operations*
+
+
 ### Quick Start
 
 ```bash
@@ -45,29 +56,47 @@ Database Configuration:
 - Production metrics monitoring
 - Multi-farm support
 
+![Farm Management Interface](screenshots/farm_details.png)
+*Detailed view of farm management interface showing farm details and associated farmers*
+
 #### Livestock Management
 - Detailed cow profiles and health records
 - Production history tracking
 - Individual cow performance metrics
 - Health tracking
 
+![Cow Management](screenshots/cow_management.png)
+*Cow management interface showing registration and tracking features*
+
 #### Milk Production Tracking
 - Daily milk production recording
 - Individual cow production tracking
 - Farm-wise production summaries
 
+![Milk Production Tracking](screenshots/milk_production.png)
+*Interface for recording and tracking milk production data*
+
 #### Agent Management
 - Agent profile management
 - Farm assignment tracking
+
+![Agent Management](screenshots/agent_management.png)
+*Agent management interface showing profile and assignment features*
 
 #### Farmer Management
 - Add farmer under farm
 - Farmer register cows
 
+![Farmer Management](screenshots/farmer_management.png)
+*Farmer management interface showing registration and cow assignment*
+
 #### Cow Management
 - Cows is assigned under Farmer
 - Can Record milk record of each cows
 - Can gets summary of the cows in a given date range
+
+![Cow Records](screenshots/cow_records.png)
+*Interface showing cow details and milk production records*
 
 ### Role-Based Access Control
 
@@ -82,6 +111,9 @@ FarmHub implements a comprehensive role-based access control system with three p
   - View all reports and analytics
   - Configure system settings
 
+![Admin Dashboard](screenshots/admin_dashboard.png)
+*Admin dashboard showing comprehensive management capabilities(See here that admin can add agents)*
+
 #### Agent
 - **Farm Management**: Oversees assigned farms and their operations
 - **Permissions**:
@@ -92,6 +124,9 @@ FarmHub implements a comprehensive role-based access control system with three p
   - View reports for farms they manage
   - Cannot modify other agents' farms or data
   - Cannot add or register admin
+
+![Agent Interface](screenshots/agent_interface.png)
+*Agent interface showing farm management capabilities(See an agent do't get options to create an agent)*
 
 #### Farmer
 - **Own Farm Operations**: Manages own livestock and production data
@@ -104,6 +139,9 @@ FarmHub implements a comprehensive role-based access control system with three p
   - Cannot create farms or register other farmers
   - Cannot add or access admin and agent data
 
+![Farmer Interface](screenshots/farmer_interface.png)
+*Farmer interface showing cow management and milk recording capabilities*
+
 ### Technologies Used
 
 - **Core Service**:
@@ -113,11 +151,17 @@ FarmHub implements a comprehensive role-based access control system with three p
   - PostgreSQL Database
   - Djoser Authentication
   
+![Django Admin Interface](screenshots/django_admin.png)
+*Django Admin interface customized for farm management*
+  
 - **Reporting Service**:
   - FastAPI
   - SQLAlchemy
   - Pydantic
   - Uvicorn
+  
+![FastAPI Documentation](screenshots/fastapi_docs.png)
+*FastAPI interactive documentation interface*
   
 - **Development & Deployment**:
   - Docker & Docker Compose
@@ -138,6 +182,7 @@ Creates:
 - Test cows and milk records
 - Activity logs
 
+
 ### API Documentation
 
 #### Authentication Endpoints
@@ -147,6 +192,7 @@ Creates:
 | POST | `/api/auth/users/` | Register new user | All |
 | GET | `/api/auth/users/me/` | Get current user details | All |
 | POST | `/api/auth/register/` | Custom registration endpoint | All |
+
 
 #### Farm Management
 
