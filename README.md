@@ -59,6 +59,11 @@ Database Configuration:
 ![Farm Management Interface](screenshots/farm_details.png)
 *Detailed view of farm management interface showing farm details and associated farmers*
 
+Who Can Access:
+- Admin: Full access
+- Agent: Can create and manage assigned farms
+- Farmer: No access
+
 #### Livestock Management
 - Detailed cow profiles and health records
 - Production history tracking
@@ -76,6 +81,11 @@ Database Configuration:
 ![Milk Production Tracking](screenshots/milk_production.png)
 *Interface for recording and tracking milk production data*
 
+Who Can Access:
+- Admin: Full access
+- Agent: Can view milk records for assigned farms
+- Farmer: Can log daily milk production
+
 #### Agent Management
 - Agent profile management
 - Farm assignment tracking
@@ -90,10 +100,21 @@ Database Configuration:
 ![Farmer Management](screenshots/farmer_management.png)
 *Farmer management interface showing registration and cow assignment*
 
+Who Can Access:
+- Admin: Full access
+- Agent: Can onboard farmers for assigned farms
+- Farmer: Can view their own profile
+
+
 #### Cow Management
 - Cows is assigned under Farmer
 - Can Record milk record of each cows
 - Can gets summary of the cows in a given date range
+
+Who Can Access:
+- Admin: Full access
+- Agent: Can manage cows for assigned farms
+- Farmer: Can register and manage their own cows
 
 ![Cow Records](screenshots/cow_records.png)
 *Interface showing cow details and milk production records*
